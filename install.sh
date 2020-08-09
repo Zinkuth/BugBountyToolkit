@@ -244,6 +244,14 @@ cd WhatWeb
 chmod +x whatweb
 ln -sf ~/toolkit/WhatWeb/whatweb /usr/local/bin/whatweb
 
+# httpX
+echo -e "${BLUE}[*] Installing httpx${NC}"
+cd ~/toolkit
+git clone https://github.com/projectdiscovery/httpx.git
+cd httpx/cmd/httpx
+go build .
+mv httpx /usr/local/bin/
+
 # fierce
 echo -e "${GREEN}[*] Installing fierce${NC}"
 python3 -m pip install fierce
