@@ -289,3 +289,11 @@ RUN python3 -m pip install fierce
 # amass
 RUN export GO111MODULE=on && \
     go get -v github.com/OWASP/Amass/v3/...
+
+
+# httpX
+Run cd ${HOME}/toolkit && \ 
+    git clone https://github.com/projectdiscovery/httpx.git && \
+    cd httpx/cmd/httpx && \
+    go build . && \
+    mv httpx /usr/local/bin/
