@@ -292,7 +292,7 @@ RUN export GO111MODULE=on && \
 
 
 # httpX
-Run cd ${HOME}/toolkit && \ 
+RUN cd ${HOME}/toolkit && \ 
     git clone https://github.com/projectdiscovery/httpx.git && \
     cd httpx/cmd/httpx && \
     go build . && \
