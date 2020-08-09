@@ -33,6 +33,7 @@ chmod +x install.sh
 # Installed Tools
 - [x] altdns
 - [x] amass
+- [x] arjun
 - [x] bucket_finder
 - [x] CloudFlair
 - [x] commix
