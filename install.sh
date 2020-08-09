@@ -252,6 +252,14 @@ cd httpx/cmd/httpx
 go build .
 mv httpx /usr/local/bin/
 
+# arjun
+echo -e "${BLUE}[*] Installing arjun${NC}"
+cd ~/toolkit
+git clone https://github.com/s0md3v/Arjun.git
+cd Arjun/
+chmod +x arjun.py
+ln -sf ~/toolkit/Arjun/arjun.py /usr/local/bin/arjun
+
 # fierce
 echo -e "${GREEN}[*] Installing fierce${NC}"
 python3 -m pip install fierce
